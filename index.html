@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Life Sim Foundation</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="iphone-frame" aria-label="iPhone play area">
+      <main class="app-shell">
+        <header class="hero">
+          <div id="avatar" class="avatar" aria-label="Character avatar">?</div>
+          <div class="hero-text">
+            <h1>Life Sim Foundation</h1>
+            <p>Start at age 0 with a fresh, randomized family each game.</p>
+          </div>
+        </header>
+
+        <section class="card">
+          <h2>Create Your Character</h2>
+          <form id="character-form" class="character-form">
+            <label>
+              First Name
+              <input id="first-name" name="firstName" type="text" maxlength="30" placeholder="Auto-random if blank" />
+            </label>
+            <label>
+              Last Name (Family Name)
+              <input id="last-name" name="lastName" type="text" maxlength="30" placeholder="Auto-random if blank" />
+            </label>
+            <label>
+              Gender
+              <select id="gender" name="gender">
+                <option value="female">Female</option>
+                <option value="male">Male</option>
+                <option value="nonbinary">Non-binary</option>
+              </select>
+            </label>
+            <button type="submit">Start New Life</button>
+          </form>
+        </section>
+
+        <section id="profile" class="card hidden"></section>
+      </main>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
